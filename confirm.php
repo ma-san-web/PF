@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" href="img/favicon-16x16.png">
+      <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+</head>
+<body>
+    <header id="header">
+        <h1 class="site-title"><a href="index.html">Avenir</a></h1>
+        <nav>
+            <!-- <button><img src="img/button.png" width="20" height="17" alt="button"></button> -->
+            <ul class="menu">
+                <li class="menu-index"><a href="index.html">HOME</a></li>
+                <li class="menu-index"><a href="about.html">ABOT ME</a></li>
+                <li class="menu-index"><a href="work.html">WORK</a></li>
+                <li class="menu-index"><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h1>CONTACT</h1>
+        <h4 class="action">ご依頼、ご相談などお気軽にお問い合わせください。</h4>
+    
+        <div class="Form">
+            <form action="confirm.php" method="post">
+            <div class="Form-Item">
+              <p class="Form-Item-Label">
+                会社名
+              </p>
+              <p><?php echo $_POST["company"]; ?></p>
+              <input type="text" class="Form-Item-Input" placeholder="例）株式会社令和">
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+              <p><?php echo $_POST["phone"]; ?></p>
+              <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label">電話番号</p>
+              <p><?php echo $_POST["phone"]; ?></p>
+              <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000">
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+              <p><?php echo $_POST["mail"]; ?></p>
+              <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+              <p><?php echo $_POST["inquiry"]; ?></p>
+              <textarea class="Form-Item-Textarea"></textarea>
+            </div>
+            <input type="submit" class="Form-Btn" value="送信する">
+        </form>
+          </div>
+          
+    </div>
+
+    <div id="contact">
+        <p>Thank you</p>
+    </div>
+<footer id="footer">
+    <p>&copy; 2024 my portfolio</p>
+    
+</footer>
+</body>
+</html>
