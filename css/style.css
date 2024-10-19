@@ -327,6 +327,8 @@ a.btn_01:hover {
     font-size: 16px;
   }
 }
+
+
 /* abouthtml */
 .about-detail {
   padding-top: 200px;
@@ -357,17 +359,34 @@ a.btn_01:hover {
   padding-top: 150px;
   width: 90%;
   margin: 0 auto;
+  text-align: center;
 }
-.modal {
- display: flex;
- margin-bottom: 50px;
+.modal ,.modalmini {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
 }
-.modal ul {
-  display:flex;
-  flex-wrap:wrap; /*要素を折り返す*/
-  width: 100%;
-  
+
+#bgmini{
+	position:fixed;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	background:rgba(0, 0, 0, .4);
 }
+
+#photomini{
+	position:absolute;
+	top: 20%;
+	left: 40%;
+	right: 0;
+  bottom: 0;
+	width:80%;
+	height:auto;
+  margin: 0 auto;
+}
+
 
 .modal_photo {
  width: 100%;
@@ -420,6 +439,12 @@ a.btn_01:hover {
   color: #e654de;
 }
 
+
+/* お問い合わせ送信後のページ */
+
+.thanks_2 {
+  padding-top: 150px;
+}
 /* フッター */
 #footer {
     text-align: center;
@@ -431,13 +456,14 @@ a.btn_01:hover {
 .page-top {
   position: fixed;
   bottom: 70px;
-  right: 50px;
+  right: 30px;
 }
 
 .page-top a {
   background-color: #634a35;
   color: #fff;
   padding: 30px;
+  border-radius: 50%;
 }
 
 .page-top a:hover {
