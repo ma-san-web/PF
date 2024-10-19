@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* 全体的 */
 body {
     background-color: rgb(241, 235, 229);
 }
@@ -29,23 +30,10 @@ body {
     overflow-x: hidden;
 }
 
-h1 {
-  font-size: 3rem;
-}
 .font-stress {
   color: #f05d5d;
 }
-.profile {
-    margin: 10px 10px 10px 10px;
-    border: 1px solid #afadad;
-    border-radius: 5px;
-    padding: 10px;
-    width: 600px;
-    margin: 0 auto;
-}
-.profile p {
-  padding: 20px 0 20px 0;
-}
+
 a.btn_01 {
 	display: block;
 	text-align: center;
@@ -65,10 +53,19 @@ a.btn_01:hover {
 	background: #d9af27;
 }
 
-img {
- max-width: 100%;
-}
 
+/* index htmlに関する記述 */
+.profile {
+    margin: 10px 10px 10px 10px;
+    border: 1px solid #afadad;
+    border-radius: 5px;
+    padding: 10px;
+    width: 600px;
+    margin: 0 auto;
+}
+.profile p {
+  padding: 20px 0 20px 0;
+}
 
 #header {
   background-color: #f7f1e2;
@@ -90,6 +87,8 @@ img {
   background-color: transparent;
   border: none;
 } */
+
+/* ヘッダー　メインビジュアル */
 #header ul {
     display: flex;
     padding: 10px 0;
@@ -126,6 +125,8 @@ img {
   margin-top: 30px;
   margin-bottom: 50px;
 }
+
+/* TOP部分のWORK */
 .works {
     display:flex;
     flex-wrap:wrap; /*要素を折り返す*/
@@ -160,6 +161,7 @@ img {
   margin-top: 20px;
 }
 
+/* お問い合わせ グーグル */
 #contact {
   margin: 10% 0 5% 0;
   text-align: center;
@@ -176,7 +178,41 @@ img {
   font-size: 2.9rem;
 }
 
+/* お問い合わせ　php */
+.content {
+  padding-top: 150px;
+  text-align: center;
+}
 
+.contact-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background: rgba(253, 255, 255, 5);
+  padding: 15px;
+  width: 280px;
+}
+.input::placeholder {
+  color: #bfbfbf;
+}
+input[type="submit"] {
+  margin-top: 30px;
+  cursor: pointer;
+  background-color: #8a684c;
+  color: #f0f0f0;
+  padding: 1rem 4rem;
+}
+
+input[type="submit"]:hover {
+  background-color: #b49378;
+}
+/* abouthtml */
 .about-detail {
   padding-top: 200px;
   margin-bottom: 5%;
@@ -219,7 +255,7 @@ img {
 }
 
 .modal_photo {
- width: 20%;
+ width: 100%;
  margin-right: 5%;
  }
 
@@ -249,12 +285,11 @@ img {
 	left: 0;
 	right: 0;
   bottom: 0;
-	width:70%;
+	width:80%;
 	height:auto;
   margin: 0 auto;
 }
 
-/*work*/
 .work-detail {
   padding: 200px 5% 5% 5%;
 }
@@ -269,14 +304,34 @@ img {
 .foam a:hover {
   color: #e654de;
 }
+
+/* フッター */
 #footer {
     text-align: center;
     padding: 20px 20px;
     background-color: rgb(209, 208, 207);
 }
 
+/* ページトップボタン */
+.page-top {
+  position: fixed;
+  bottom: 70px;
+  right: 50px;
+}
+
+.page-top a {
+  background-color: #634a35;
+  color: #fff;
+  padding: 30px;
+}
+
+.page-top a:hover {
+  background-color: #8a684c;
+}
+
 @media (max-width: 670px) {
   
+  /* indexhtml */
   .works {
     flex-direction: column;
   }
@@ -291,10 +346,12 @@ img {
     margin-bottom: 30px;
     padding: 15% 30%;
   }
-  .foam {
+
+  /* お問い合わせ */
+  .form {
     font-size: 2rem;
   }
-
+/* ヘッダー */
   #header {
     flex-direction: column; 
     max-width: 100%;
