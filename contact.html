@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" href="img/favicon-16x16.png">
+      <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+</head>
+<body>
+    <header id="header">
+        <h1 class="site-title"><a href="index.html">Avenir</a></h1>
+        <nav>
+            <!-- <button><img src="img/button.png" width="20" height="17" alt="button"></button> -->
+            <ul class="menu">
+                <li class="menu-index"><a href="index.html">HOME</a></li>
+                <li class="menu-index"><a href="about.html">ABOT ME</a></li>
+                <li class="menu-index"><a href="work.html">WORK</a></li>
+                <li class="menu-index"><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h1>CONTACT</h1>
+    
+    <form action="confirm.php" method="post" name="contact-form">
+          
+          <div class="contact-list">
+                <label for="name">お名前</label>
+                <input type="text" id="name" name="your-name" placeholder="お名前をご入力ください">
+          </div>
+          <div class="contact-list">
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="your-email" placeholder="メールアドレスをご入力ください">
+          </div>
+          <div class="contact-list"> 
+                <label for="message">メッセージ</label>
+                <textarea name="message" placeholder="メッセージをご入力ください"></textarea>
+          </div>  
+                <input type="submit" class="button" value="Send">
+    </form>
+
+    </div>
+    <div id="contact">
+        <h1 class="action">CONTACT</h1>
+        <h4 class="action">ご依頼、ご相談などお気軽にお問い合わせください。</h4>
+
+        <!-- <p class="form"><a href="https://forms.gle/5s2PmcuQxn7cQX18A" target="_blank">お問い合わせはこちらかから</a></p> -->
+        <p>Thank you</p>
+    </div>
+<footer id="footer">
+    <p>&copy; 2024 my portfolio</p>
+    
+</footer>
+</body>
+</html>
