@@ -29,30 +29,39 @@
     </header>
     <div class="content">
         <h1>CONTACT</h1>
-    
-    <form action="confirm.php" method="post" name="contact-form">
-          
-          <div class="contact-list">
-                <label for="name">お名前</label>
-                <input type="text" id="name" name="your-name" placeholder="お名前をご入力ください">
-          </div>
-          <div class="contact-list">
-                <label for="email">メールアドレス</label>
-                <input type="email" id="email" name="your-email" placeholder="メールアドレスをご入力ください">
-          </div>
-          <div class="contact-list"> 
-                <label for="message">メッセージ</label>
-                <textarea name="message" placeholder="メッセージをご入力ください"></textarea>
-          </div>  
-                <input type="submit" class="button" value="Send">
-    </form>
-
-    </div>
-    <div id="contact">
-        <h1 class="action">CONTACT</h1>
         <h4 class="action">ご依頼、ご相談などお気軽にお問い合わせください。</h4>
+    
+        <div class="Form">
+            <form action="confirm.php" method="post">
+            <div class="Form-Item">
+              <p class="Form-Item-Label">
+                会社名
+              </p>
+              <input type="text" class="Form-Item-Input" placeholder="例）株式会社令和">
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+              <input type="text" name="company" class="Form-Item-Input" placeholder="例）山田太郎">
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label">電話番号</p>
+              <input type="text" name="phone" class="Form-Item-Input" placeholder="例）000-0000-0000">
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+              <input type="email" name="mail" class="Form-Item-Input" placeholder="例）example@gmail.com">
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+              <textarea name="inquiry" class="Form-Item-Textarea"></textarea>
+            </div>
+            <input type="submit" class="Form-Btn" value="送信する">
+        </form>
+          </div>
+          
+    </div>
 
-        <!-- <p class="form"><a href="https://forms.gle/5s2PmcuQxn7cQX18A" target="_blank">お問い合わせはこちらかから</a></p> -->
+    <div id="contact">
         <p>Thank you</p>
     </div>
 <footer id="footer">
