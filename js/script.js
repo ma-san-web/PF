@@ -3,7 +3,7 @@ $(function(){
 
   /*TOP about フェードイン*/
     $('#fadeIn').hide().fadeIn(3000);
-
+    $('#mainvisual').hide().fadeIn(5000);
   // モーダル
     $(".modal a").click(function(){
       $("body").append('<div id="bg">');
