@@ -2,8 +2,7 @@ $(function(){
   /*自分で書いたもの*/
 
   /*TOP about フェードイン*/
-    
-    $('#mainvisual').hide().fadeIn(5000);
+    $('#mainvisual').hide().fadeIn(4000);
   // モーダル
     $(".modal a").click(function(){
       $("body").append('<div id="bg">');
