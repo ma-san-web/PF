@@ -2,7 +2,7 @@ $(function(){
   /*自分で書いたもの*/
 
   /*TOP about フェードイン*/
-    $('#mainvisual').hide().fadeIn(4000);
+    $('#mainvisual').hide().fadeIn(5000);
   // モーダル
     $(".modal a").click(function(){
       $("body").append('<div id="bg">');
@@ -95,5 +95,15 @@ $(function(){
     });
   });
 
+  // ハンバーガーメニュー
+  $(function () {
+    $('#js-hamburger-menu, .navigation__link').on('click', function () {
+      $('.navigation').slideToggle(500)
+      $('.hamburger-menu').toggleClass('hamburger-menu--open')
+    });
 
+    $("button").click(function(){
+      $("ul").slideToggle(200);
+    });
+  });
 });
