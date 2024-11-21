@@ -68,8 +68,41 @@ $(function(){
 
     });
     return false;
+});
 
 
+ // モーダル mini
+ $(".modalmini2 a").click(function(){
+  $("body").append('<div id="bgmini">');
+
+  $("body").append('<div id="photomini2">');
+
+  $("#bgmini").hide();
+  $("#photomini2").hide();
+
+  $("#photomini2").html("<img>");
+
+  $("#photomini2 img").attr("src", $(this).attr("href"));
+
+  $("#photomini2 img").attr("width", );
+  $("#photomini2 img").attr("height", );
+  $("#photomini2 img").attr("alt", "Photo");
+
+  $("#bgmini").fadeIn();
+  $("#photomini2").fadeIn();
+
+  $("#bgmini").click(function(){
+      $(this).fadeOut(function(){
+          $(this).remove();
+      });
+       
+
+      $("#photomini2").fadeOut(function(){
+          $(this).remove();
+      });
+
+  });
+  return false;
 });
 
   
